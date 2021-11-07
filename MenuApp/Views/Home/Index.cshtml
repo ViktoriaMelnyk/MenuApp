@@ -2,7 +2,76 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="wrapper">
+    <div class="container">
+        <div class="banner">
+            <div class="banner__info">
+                <div class="banner__title"> <span>Welcome</span> to <br> the world of tasty & fresh food</div>
+                <div class="banner__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis natus quaerat pariatur ratione eos, laborum dolores ab illum, sint eaque sit possimus.
+                </div>
+                <a href="" class="banner__btn">Recipes for you</a>
+            </div>
+            <div class="banner__photo"  style="background-image: url(~/wwwroot/media/banner.png);"></div>
+        </div>
+    </div>
+</section>
+<section class="recipes">
+    <div class="container">
+        <div class="recipes__title">
+            Our most popular dishes
+        </div>
+        <div class="recipes__inner">
+            <div class="recipe">
+                <a href=""><div class="recipe__img" style="background-image: url(https://www.deliciousmagazine.co.uk/wp-content/uploads/2018/10/pork-768x960.jpg);"></div></a>
+                <div class="recipe__info">
+                    <div class="recipe__title">Southern Pimento Cheese</div>
+                    <ul>
+                        <li>Level: <span></span></li>
+                        <li>Kcal: <span></span></li>
+                        <li>Prep time: <span></span></li>
+                    </ul>
+                    <a href="" class="banner__btn recipe__btn">View recipe </a>
+                </div>
+            </div>
+            <div class="recipe">
+                <a href=""><div class="recipe__img" style="background-image: url(https://www.deliciousmagazine.co.uk/wp-content/uploads/2018/10/pork-768x960.jpg);"></div></a>
+                <div class="recipe__info">
+                    <div class="recipe__title">Southern Pimento Cheese</div>
+                    <ul>
+                        <li>Level: <span></span></li>
+                        <li>Kcal: <span></span></li>
+                        <li>Prep time: <span></span></li>
+                    </ul>
+                    <button class="banner__btn">View recipe </button>
+                </div>
+            </div>
+            <div class="recipe">
+                <a href=""><div class="recipe__img" style="background-image: url(https://www.deliciousmagazine.co.uk/wp-content/uploads/2018/10/pork-768x960.jpg);"></div></a>
+                <div class="recipe__info">
+                    <div class="recipe__title">Southern Pimento Cheese</div>
+                    <ul>
+                        <li>Level: <span></span></li>
+                        <li>Kcal: <span></span></li>
+                        <li>Prep time: <span></span></li>
+                    </ul>
+                    <button class="banner__btn">View recipe </button>
+                </div>
+            </div>
+            <div class="recipe">
+                <a href=""><div class="recipe__img" style="background-image: url(https://www.deliciousmagazine.co.uk/wp-content/uploads/2018/10/pork-768x960.jpg);"></div></a>
+                <div class="recipe__info">
+                    <div class="recipe__title">Southern Pimento Cheese</div>
+                    <ul>
+                        <li>Level: <span></span></li>
+                        <li>Kcal: <span></span></li>
+                        <li>Prep time: <span></span></li>
+                    </ul>
+                    <button class="banner__btn ">View recipe </button>
+                </div>
+            </div>
+
+        </div>
+        <button class="banner__btn ">Generate another recipes </button>
+    </div>
+</section>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body >
+    <section class="addRecipe__section" style="background-image: url(media/bg.jpg);">
+        <div class="addRecipe__inner">
+            <h1>Add New Recipe</h1>
+            <form action="" id="addRecipe__form">
+                <div class="form__group ">
+                    <label for="title"> Title</label>
+                    <input type="text" id="title" placeholder="e.g. Apple pie">
+                </div>
+                <div class="form__group">
+                    <label for="kcal"> Kcal</label>
+                    <input type="text" placeholder=" e.g. 300" id="kcal">
+                </div>
+                <div class="form__group">
+                    <label for="link"> Source link</label>
+                    <input type="text" placeholder="e.g. https://recipes" id="link">
+                </div>
+                <div class="form__group">
+                    <label for="difficulty"> Difficulty</label>
+                    <select name="select" id="difficulty">
+                        <option value="1"> 1</option> 
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="img_link"> Image link</label>
+                    <input type="text" placeholder="e.g. https://recipes/img/" id="img_link">
+                </div>
+                <button type="submit" class="banner__btn">Add Recipe</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
