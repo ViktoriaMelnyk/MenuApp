@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <span>Stay</span>Healthy
+                </a>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <form action="" class="header__form">
+                            <input type="text" placeholder="Search...">
+                            <button type="submit"><img src="media/search_white.svg" alt=""></button>
+                        </form>
+                    </li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Recipe" asp-action="Recipe">Recipes</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
