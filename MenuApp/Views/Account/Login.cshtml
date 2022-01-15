@@ -1,0 +1,36 @@
+﻿@model MenuApp.Models.ViewModels.LoginViewModel
+
+    <section class="login__section">
+        <div class="login__inner">
+            <div class="login__left">
+                <h1>Sign In</h1>
+                <form id="login__form" method="post" asp-action="Login" asp-controller="Account">
+                    <div class="form__group" asp-validation-summary="All">
+                        <label asp-for="Email"> Email</label>
+                        <input asp-for="Email" type="text" placeholder="Email">
+                    </div>
+                    <div class="form__group" asp-validation-summary="All">
+                        <label asp-for="Password">Password</label>
+                        <input asp-for="Password" type="text" placeholder="Password">
+                    </div>
+                    <button type="submit" class="banner__btn">Sign In</button>
+                    <div class="form__group remember">
+                        <label asp-for="RememberMe" class="forgot__pass">Remember Me</label>
+                        <input asp-for="RememberMe" type ="checkbox">
+                    </div>
+
+
+
+
+                </form>
+
+            </div>
+            <div class="login__right">
+                <div class="login__info">
+                    <div class="login__title">Welcome to Login</div>
+                    <div class="login__text">Don't have an account?</div>
+                    <a asp-action="Register" class="banner__btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>

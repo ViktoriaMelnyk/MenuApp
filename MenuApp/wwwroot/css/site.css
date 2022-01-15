@@ -450,7 +450,6 @@ margin-bottom: 20px;
 }
 
 .forgot__pass {
-font-size: 14px;
 color: #b9b9b9;
 font-weight: bold;
 cursor: pointer;
@@ -491,6 +490,22 @@ box-shadow: none;
 padding: 10px;
 margin: 0 auto;
 text-transform: none;
+}
+.form__group .remember {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.remember label {
+    margin-right: 5%;
+}
+
+.remember input {
+    width: fit-content;
+    display: inline;
 }
 
 .checkbox {
