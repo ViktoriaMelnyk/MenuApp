@@ -19,9 +19,8 @@ namespace MenuApp.Controllers
         public IActionResult Recipe()
 
         {
-            IEnumerable<Recipe> objList = _db.Recipes;
-            //var randomRecipes = _db.Recipes.Take(4);
-            return View(objList);
+            var randomRecipes = _db.Recipes.OrderBy(r => Guid.NewGuid());
+            return View(randomRecipes);
         }
     }
 }

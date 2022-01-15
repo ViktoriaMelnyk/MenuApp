@@ -35,15 +35,16 @@
                 </aside>
                 <div class="user-page__content">
                     <div class="user-page__items">
-                        @if (Model.Count() > 0)
-                        {
-                            foreach (var recipe in Model)
+                        @*@if (Model.Count() > 0)*@
+                        @*{*@
+                            @foreach(var recipe in Model)
                             {
                                 <div class="user-page__item">
                                     <div class="user-page__item-img" style="background-image: url(@recipe.Image_url);"></div>
                                     <div class="user-page__item-info">
                                         <div class="user-page__item-title">@recipe.Title</div>
                                         <ul>
+                                            <li>Level: <span> @recipe.Id</span></li>
                                             <li>Level: <span> @recipe.Difficulty</span></li>
                                             <li>Kcal: <span> @recipe.Kcal</span></li>
                                             <li>Prep time: <span> @recipe.Time</span></li>
@@ -53,11 +54,11 @@
                                 </div>
                             }
 
-                        }
+                        @*}
                         else
                         {
                             <p> Nie masz receptów</p>
-                        }
+                        }*@
 
 
                     </div>
