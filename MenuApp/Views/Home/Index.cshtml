@@ -2,7 +2,21 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <span>Stay</span>Healthy
+                </a>
+            </div>
+            <nav class="header__menu">
+                <partial name="_LoginPartial"/>
+            </nav>
+        </div>
+    </div>
 
+</header>
 <section class="wrapper">
     <div class="container">
         <div class="banner">
@@ -11,7 +25,7 @@
                 <div class="banner__text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis natus quaerat pariatur ratione eos, laborum dolores ab illum, sint eaque sit possimus.
                 </div>
-                <a href="" class="banner__btn">Recipes for you</a>
+                <a asp-controller="Account" asp-action="Login" class="banner__btn">Login to see your recipes</a>
             </div>
             <div class="banner__photo"></div>
         </div>
@@ -19,12 +33,12 @@
 </section>
 <section class="recipes">
     <div class="container">
-        <div class="recipes__title">
+        @*<div class="recipes__title">
             Our most popular dishes
-        </div>
+        </div>*@
         <div class="recipes__inner">
         </div>
-        <button class="banner__btn ">Generate another recipes </button>
+        @*<button class="banner__btn ">Generate another recipes </button>*@
     </div>
 </section>
 

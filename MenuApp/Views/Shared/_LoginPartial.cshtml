@@ -1,0 +1,21 @@
+﻿@inject Microsoft.AspNetCore.Identity.SignInManager<MenuApp.Models.ApplicationUser> signInManager
+@if (signInManager.IsSignedIn(User))
+{
+<form method="post" id="logoutForm" asp-action="Logoff" asp-controller="Account">
+    <ul>
+        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+        <li><a asp-controller="Recipe" asp-action="Recipe">My Recipes</a></li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log Out</a></li>
+    </ul>
+</form>
+
+}
+else
+{
+    <ul>
+        <li><a asp-controller="Account" asp-action="Register">Register</a></li>
+        <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+    </ul>
+}
+
+
